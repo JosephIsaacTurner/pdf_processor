@@ -63,6 +63,7 @@ def extract_images(pdf_path, output_folder, min_size=6000):
     finally:
         doc.close()
 
+    # print("extracted {} images from {}".format(len(extracted_images), pdf_path))
     return extracted_images
 
 def extract_text(pdf_path, output_folder):
